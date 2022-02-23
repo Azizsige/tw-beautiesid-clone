@@ -14,7 +14,7 @@
     <title>BeautiesLife ID Clone</title>
   </head>
   <body>
-    <nav class="rounded border-gray-200 bg-red-200 px-2 py-7 sm:px-4">
+    <nav class="bg-[#FEF8F8] px-2 py-7 sm:px-4">
       <div
         class="container mx-auto flex flex-wrap items-center justify-between"
       >
@@ -85,15 +85,16 @@
     </nav>
 
     <main>
-      <div class="thumbnail h-auto border bg-[#FEF8F8]">
+      <div class="thumbnail h-auto bg-[#FEF8F8]">
         <div class="content font-primary px-4">
-          <div class="content-text border mt-24 flex w-full justify-between">
-            <h6 class="relative z-10 self-end text-3xl font-bold text-[#555555]">
+          <div class="content-text mt-24 flex w-full justify-between sm:flex-col sm:justify-start sm:items-start sm:mt-0">
+            <h6 class="relative z-10 self-end text-3xl font-bold text-[#555555] sm:static sm:z-0 sm:order-2 sm:normal sm:self-auto sm:text-6xl">
               Pasti berat <br />
               kalo lari sendirian<span class="text-[#EE9591]">.</span>
             </h6>
             <img
-              class="border relative -top-12 right-10 w-[25%] z-30 self-end"
+            id="changed"
+              class="relative -top-12 right-10 w-[25%] z-30 self-end sm:static sm:self-auto sm:right-0 sm:-top-0 sm:order-1 sm:mb-5 sm:w-auto sm:h-auto sm:mt-16"
               src="./assets/pixel-mobile.png"
               alt=""
               srcset=""
@@ -101,7 +102,7 @@
           </div>
 
           <div class="content-thumb">
-            <h6 class="mt-10 text-lg text-[#888888]">
+            <h6 class="mt-10 text-lg sm:text-xl text-[#888888] sm:pr-36">
               Setiap hal pasti butuh hal lain untuk membersamai. Begitupun
               dengan bisnis, Beautieslfie.id hadir untuk membersamai kalian
               untuk menjadi Beautypreneur. Siapapun kamu!!
@@ -109,28 +110,28 @@
           </div>
 
           <div
-            class="content-who -ml-1 mt-5 flex justify-evenly flex-wrap font-bold text-[#888888] w-auto"
+            class="content-who -ml-1 mt-5 flex justify-evenly flex-wrap font-bold text-[#888888] border sm:items-center w-auto sm:justify-between sm:w-[75%]"
           >
             <div
-              class="who__mahasiswa font-primary flex flex-wrap items-center justify-center mt-5"
+              class="who__mahasiswa font-primary flex flex-wrap items-center justify-center mt-5 sm:mt-0"
             >
               <img src="./assets/icon-1.png" alt="" srcset="" />
-              <p class="font-primary text-sm ml-1">Mahasiswa</p>
+              <p class="font-primary text-sm ml-1 sm:text-base">Mahasiswa</p>
             </div>
-            <div class="who__irt flex items-center justify-center mt-5">
+            <div class="who__irt flex items-center justify-center mt-5 sm:mt-0">
               <img src="./assets/icon-1.png" alt="" srcset="" />
-              <p class="font-primary text-sm ml-1">Ibu Rumah Tangga</p>
+              <p class="font-primary text-sm ml-1 sm:text-base">Ibu Rumah Tangga</p>
             </div>
-            <div class="who__car items-centerter flex justify-center mt-5">
+            <div class="who__car items-center flex justify-center mt-5 sm:mt-0">
               <img src="./assets/icon-1.png" alt="" srcset="" />
-              <p class="font-primary text-sm ml-1">Career Hunter</p>
+              <p class="font-primary text-sm ml-1 sm:text-base">Career Hunter</p>
             </div>
           </div>
 
           <div class="wrappper-slogan mt-10">
-            <div class="slogan font-primary text-white bg-[#EE9591] rounded-md text-center py-5 px-3">
+            <div class="slogan font-primary text-white bg-[#EE9591] rounded-md text-center py-5 px-3 sm:text-2xl">
               <p class="font-bold">1st Indonesian Beautypreneur Community</p>
-              <p class="text-sm mt-2">Dengan berbagai fasilitas “advance disigital platform”.</p>
+              <p class="text-sm mt-2 sm:text-base">Dengan berbagai fasilitas “advance disigital platform”.</p>
             </div>
           </div>
         </div>
@@ -139,15 +140,6 @@
         </div>
       </div>
     </main>
-
-    <script>
-      const toggle = document.getElementById("toggle");
-      let navbar = document.getElementById("mobile-menu-4");
-
-      toggle.addEventListener("click", function () {
-        navbar.classList.toggle("block");
-        navbar.classList.toggle("hidden");
-      });
-    </script>
+    <script src="./dist/js/app.js"></script>
   </body>
 </html>
