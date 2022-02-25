@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./dist/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -55,7 +56,7 @@
           id="mobile-menu-4"
         >
           <ul
-            class="mt-4 flex flex-col lg:mt-0 lg:ml-[40rem] lg:w-[40rem] lg:flex-row lg:justify-between lg:text-2xl lg:font-medium"
+            class="mt-4 flex flex-col lg:mt-0 lg:ml-[50rem] lg:w-[30rem] lg:flex-row lg:justify-between lg:text-xl lg:font-medium"
           >
             <li>
               <a
@@ -85,77 +86,42 @@
     </nav>
 
     <main>
-      <div class="thumbnail flex h-auto items-center bg-[#FEF8F8] lg:px-10 lg:py-20 lg:h-screen border">
-        <div class="content font-primary px-4 lg:px-0 border">
-          <div
-            class="content-text mt-24 flex w-full justify-between sm:mt-0 sm:flex-col sm:items-start sm:justify-start"
-          >
-            <h6
-              class="sm:normal relative z-10 self-end text-3xl font-bold text-[#555555] sm:static sm:z-0 sm:order-2 sm:self-auto sm:text-6xl"
-            >
-              Pasti berat <br />
-              kalo lari sendirian<span class="text-[#EE9591]">.</span>
-            </h6>
-            <img
-              id="changed"
-              class="relative -top-12 right-10 z-30 w-[25%] self-end sm:static sm:right-0 sm:-top-0 sm:order-1 sm:mb-5 sm:mt-16 sm:h-auto sm:w-auto sm:self-auto lg:-mt-56"
-              src="./assets/pixel-mobile.png"
-              alt=""
-              srcset=""
-            />
-          </div>
+      <section class="wrapper-tagline bg-[#FEF8F8]">
+        <section class="container-tagline flex lg:justify-between py-28 px-4 lg:px-14 lg:py-24">
+          <section class="tagline__article font-primary">
+            <header class="flex text-[#555555] font-black lg:flex-col lg:items-start">
+              <h1 class="text-4xl lg:order-2 lg:text-8xl">Pasti berat <br>
+                kalo lari sendirian<span class="text-[#EE9591]">.</span></h1>
+                <img id="changed" class="relative z-20 -top-10 right-5 h-20 md:static lg:ml-1.5 lg:mb-7 lg:w-36" src="./assets/pixel-pc.png" alt="" srcset="">
+            </header>
+            <h3 class="text-[#888888] lg:text-xl lg:pr-80 lg:mt-7 mt-7">Setiap hal pasti butuh hal lain untuk membersamai.
+              Begitupun dengan bisnis, Beautieslfie.id hadir untuk membersamai
+              kalian untuk menjadi <span class="font-bold underline">Beautypreneur</span>. Siapapun kamu!!</h3>
+              <section class="mt-4 tagline__who flex flex-wrap justify-evenly lg:text-[#888] lg:mt-7 lg:text-xl lg:font-bold lg:justify-between lg:pr-96">
+                <div class="tagline__who--mahasiswa flex items-center lg:mt-0 mt-3">
+                  <img class="mr-1.5 lg:mr-2" src="./assets/icon-1.png" alt="" srcset="">
+                  <h4>Mahasiswa</h4>
+                </div>
+                <div class="tagline__who--irt flex items-center lg:mt-0 mt-3">
+                  <img class="mr-1.5 lg:mr-2" src="./assets/icon-1.png" alt="" srcset="">
+                  <h4>Ibu Rumah Tangga</h4>
+                </div>
+                <div class="tagline__who--ch flex items-center lg:mt-0 mt-3">
+                  <img class="mr-1.5 lg:mr-2" src="./assets/icon-1.png" alt="" srcset="">
+                  <h4>Career Hunter</h4>       
+                </div>
+              </section>
 
-          <div class="content-thumb">
-            <h6 class="mt-10 text-lg text-[#888888] sm:pr-36 sm:text-xl">
-              Setiap hal pasti butuh hal lain untuk membersamai. Begitupun
-              dengan bisnis, Beautieslfie.id hadir untuk membersamai kalian
-              untuk menjadi Beautypreneur. Siapapun kamu!!
-            </h6>
-          </div>
-
-          <div
-            class="content-who -ml-1 mt-5 flex w-auto flex-wrap justify-evenly font-bold text-[#888888] sm:w-[75%] sm:items-center sm:justify-between lg:w-full"
-          >
-            <div
-              class="who__mahasiswa font-primary mt-5 flex flex-wrap items-center justify-center sm:mt-0"
-            >
-              <img src="./assets/icon-1.png" alt="" srcset="" />
-              <p class="font-primary ml-1 text-sm sm:text-base">Mahasiswa</p>
-            </div>
-            <div class="who__irt mt-5 flex items-center justify-center sm:mt-0">
-              <img src="./assets/icon-1.png" alt="" srcset="" />
-              <p class="font-primary ml-1 text-sm sm:text-base">
-                Ibu Rumah Tangga
-              </p>
-            </div>
-            <div class="who__car mt-5 flex items-center justify-center sm:mt-0">
-              <img src="./assets/icon-1.png" alt="" srcset="" />
-              <p class="font-primary ml-1 text-sm sm:text-base">
-                Career Hunter
-              </p>
-            </div>
-          </div>
-
-          <div class="wrappper-slogan mt-10">
-            <div
-              class="slogan font-primary rounded-md bg-[#EE9591] py-5 px-3 text-center text-white sm:text-2xl lg:w-[70%]"
-            >
-              <p class="font-bold">1st Indonesian Beautypreneur Community</p>
-              <p class="mt-2 text-sm sm:text-base">
-                Dengan berbagai fasilitas “advance disigital platform”.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="thumb-img hidden lg:block">
-          <img
-            class="lg:w-[109rem]"
-            src="./assets/jumbotron.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-      </div>
+              <section class="tagline__community bg-[#EE9591] lg:w-1/2 lg:shadow-custom2 text-[#F6F6F6] lg:p-5 rounded-lg lg:mt-14 mt-12 lg:px-0 px-3 lg:py-0 py-3 lg:text-left text-center">
+                <h3 class="text-base lg:text-2xl font-bold">1st Indonesian Beautypreneur Community</h3>
+                <h4 class="text-[#F6F6F6] mt-2 ">Dengan berbagai fasilitas “advance disigital platform”.</h4>
+              </section>
+          </section>
+          <section class="tagline__img">
+            <img class="hidden lg:block lg:w-[116rem]" src="./assets/jumbotron.png" alt="" srcset="">
+          </section>
+        </section>
+      </section>
     </main>
     <script src="./dist/js/app.js"></script>
   </body>
