@@ -19,3 +19,20 @@ mediaQuery.addListener(handleTabletChange);
 
 // Initial check
 handleTabletChange(mediaQuery);
+
+function callback(entries){
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const removeBlur = document.getElementById('blured');
+      removeBlur.classList.remove('blur-lg')
+    }
+  })
+}
+
+const options = {
+  threeshold: 1.0
+}
+
+let observer = new IntersectionObserver(callback, options)
+
+observer.observe(document.querySelector('.target'))
