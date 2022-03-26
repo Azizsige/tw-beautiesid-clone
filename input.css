@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .wrapper-section2{
+    object-fit: cover;
+    object-position: center;
+    background-position: 111% 147px; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+   background-image:  url('/assets/bgsec3.png');
+  }
+
+  .left {
+    box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 60%);
+  }    
+ 
+  .right {
+    box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 60%);
+  }
+
+  @media (min-width: 1024px){
+    .wrapper-section2 {
+      background-position: 111% -22px;
+    }
+  }
+}
