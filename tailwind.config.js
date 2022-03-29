@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         'heading': '#555555',
-        'paragraph': '#888888'
+        'paragraph': '#888888',
+        'brand': '#EE9591'
       }
     },
   },
