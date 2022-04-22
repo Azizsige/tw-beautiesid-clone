@@ -9,10 +9,36 @@
 
   .left {
     box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 60%);
+    background-image: linear-gradient(145deg,
+        hsl(2deg 88% 81%) 0%,
+        hsl(2deg 84% 80%) 9%,
+        hsl(2deg 81% 79%) 18%,
+        hsl(2deg 78% 78%) 27%,
+        hsl(2deg 75% 77%) 36%,
+        hsl(2deg 73% 76%) 45%,
+        hsl(2deg 71% 75%) 55%,
+        hsl(2deg 68% 74%) 64%,
+        hsl(2deg 66% 73%) 73%,
+        hsl(3deg 65% 73%) 82%,
+        hsl(3deg 63% 72%) 91%,
+        hsl(3deg 61% 71%) 100%);
   }
 
   .right {
     box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 78%);
+    background-image: linear-gradient(145deg,
+        hsl(2deg 88% 81%) 0%,
+        hsl(2deg 84% 80%) 9%,
+        hsl(2deg 81% 79%) 18%,
+        hsl(2deg 78% 78%) 27%,
+        hsl(2deg 75% 77%) 36%,
+        hsl(2deg 73% 76%) 45%,
+        hsl(2deg 71% 75%) 55%,
+        hsl(2deg 68% 74%) 64%,
+        hsl(2deg 66% 73%) 73%,
+        hsl(3deg 65% 73%) 82%,
+        hsl(3deg 63% 72%) 91%,
+        hsl(3deg 61% 71%) 100%);
   }
 
   .contents__tools {
