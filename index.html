@@ -1,328 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/css/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>BeautiesLife ID Clone</title>
-  </head>
-  <body>
-    <nav class="bg-[#FEF8F8] px-2 py-7 sm:px-4">
-      <div class="mx-auto flex flex-wrap items-center justify-between lg:px-6">
-        <a href="#" class="ml-2">
-          <img
-            class="h-7 w-32 sm:h-auto sm:w-auto lg:w-52"
-            src="./assets/logo.png"
-            alt=""
-            srcset=""
-          />
-        </a>
-        <div class="flex lg:order-1">
-          <button
-            type="button"
-            class="shadow-custom mr-3 min-h-[44px] min-w-[44px] rounded-lg bg-[#EE9591] p-2.5 text-center text-xs font-medium text-white hover:bg-[#e0928e] focus:ring-4 focus:ring-blue-300 sm:px-5 sm:py-2.5 sm:text-sm md:mr-3 md:py-2 md:px-3 md:text-base lg:mr-3 lg:py-2 lg:px-3 lg:text-lg xl:py-4 xl:px-6 xl:text-xl"
-          >
-            Registrasi
-          </button>
-          <button
-            id="toggle"
-            data-collapse-toggle="mobile-menu-4"
-            type="button"
-            class="mr-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
-            aria-controls="mobile-menu-4"
-            aria-expanded="false"
-          >
-            <img
-              class="mx-auto h-5"
-              id="toggle"
-              src="./assets/iconHam.svg"
-              alt=""
-              srcset=""
-            />
-          </button>
-        </div>
-        <div
-          class="md:font-primary hidden w-full items-center justify-between transition-all duration-500 ease-in-out lg:flex lg:w-auto"
-          id="mobile-menu-4"
-        >
-          <ul
-            class="mt-4 flex shrink flex-col lg:mt-0 lg:ml-0 lg:w-[27rem] lg:flex-row lg:justify-between lg:text-xl lg:font-medium xl:ml-[21rem] xl:w-[30rem]"
-          >
-            <li>
-              <a
-                href="#"
-                class="block rounded py-2 pr-4 pl-3 text-[#555555] lg:p-0 lg:hover:text-[#EE9591]"
-                aria-current="page"
-                >Fasilitas</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-[#555555] lg:p-0 lg:hover:text-[#EE9591]"
-                >Beautypreneur</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-[#555555] lg:p-0 lg:hover:text-[#EE9591]"
-                >Brand Partner
-              </a>
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./dist/css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>BeautiesLife ID Clone</title>
+</head>
+
+<body>
+  <nav class="bg-[#FEF8F8] px-2 py-7 sm:px-4">
+    <div class="mx-auto flex flex-wrap items-center justify-between lg:px-6">
+      <a href="#" class="ml-2">
+        <img class="h-7 w-32 sm:h-auto sm:w-auto lg:w-52" src="./assets/logo.png" alt="" srcset="" />
+      </a>
+      <div class="flex lg:order-1">
+        <button type="button"
+          class="shadow-custom mr-3 min-h-[44px] min-w-[44px] rounded-lg bg-[#EE9591] p-2.5 text-center text-xs font-medium text-white hover:bg-[#e0928e] focus:ring-4 focus:ring-blue-300 sm:px-5 sm:py-2.5 sm:text-sm md:mr-3 md:py-2 md:px-3 md:text-base lg:mr-3 lg:py-2 lg:px-3 lg:text-lg xl:py-4 xl:px-6 xl:text-xl">
+          Registrasi
+        </button>
+        <button id="toggle" data-collapse-toggle="mobile-menu-4" type="button"
+          class="mr-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
+          aria-controls="mobile-menu-4" aria-expanded="false">
+          <img class="mx-auto h-5" id="toggle" src="./assets/iconHam.svg" alt="" srcset="" />
+        </button>
       </div>
-    </nav>
+      <div
+        class="md:font-primary hidden w-full items-center justify-between transition-all duration-500 ease-in-out lg:flex lg:w-auto"
+        id="mobile-menu-4">
+        <ul
+          class="mt-4 flex shrink flex-col lg:mt-0 lg:ml-0 lg:w-[27rem] lg:flex-row lg:justify-between lg:text-xl lg:font-medium xl:ml-[21rem] xl:w-[30rem]">
+          <li>
+            <a href="#" class="block rounded py-2 pr-4 pl-3 text-[#555555] lg:p-0 lg:hover:text-[#EE9591]"
+              aria-current="page">Fasilitas</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-[#555555] lg:p-0 lg:hover:text-[#EE9591]">Beautypreneur</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-[#555555] lg:p-0 lg:hover:text-[#EE9591]">Brand Partner
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-      <section class="wrapper-tagline bg-[#FEF8F8]">
-        <section
-          class="container-tagline flex py-16 px-4 md:px-8 lg:justify-between lg:px-14 lg:py-7"
-        >
-          <section class="tagline__article font-primary">
-            <header
-              class="flex font-black text-[#555555] md:flex-col md:items-start"
-            >
-              <h1
-                class="text-4xl md:order-2 md:text-7xl lg:text-5xl xl:text-7xl 2xl:text-8xl"
-              >
-                Pasti berat <br />
-                kalo lari sendirian<span class="text-[#EE9591]">.</span>
-              </h1>
-              <img
-                id="changed"
-                class="target relative -top-10 right-5 z-20 h-20 md:static md:mb-7 md:h-12 lg:ml-1.5 lg:w-36"
-                src="./assets/pixel-pc.png"
-                alt=""
-                srcset=""
-              />
-            </header>
-            <h3
-              class="mt-7 text-[#888888] md:pr-52 md:text-lg lg:mt-7 lg:pr-20 lg:text-xl xl:pr-40 2xl:pr-80"
-            >
-              Setiap hal pasti butuh hal lain untuk membersamai. Begitupun
-              dengan bisnis, Beautieslfie.id hadir untuk membersamai kalian
-              untuk menjadi
-              <span class="font-bold underline">Beautypreneur</span>. Siapapun
-              kamu!!
-            </h3>
-            <section
-              class="tagline__who mt-4 flex flex-wrap justify-evenly font-bold text-[#888] md:w-[27rem] lg:mt-7 lg:w-full lg:pr-14 lg:text-lg xl:w-[38rem] xl:justify-between xl:text-xl 2xl:w-[50rem]"
-            >
-              <div
-                class="tagline__who--mahasiswa mt-3 flex items-center xl:mt-0"
-              >
-                <img
-                  class="mr-1.5 lg:mr-2"
-                  src="./assets/icon-1.png"
-                  alt=""
-                  srcset=""
-                />
-                <h4>Mahasiswa</h4>
-              </div>
-              <div class="tagline__who--irt mt-3 flex items-center xl:mt-0">
-                <img
-                  class="mr-1.5 lg:mr-2"
-                  src="./assets/icon-1.png"
-                  alt=""
-                  srcset=""
-                />
-                <h4>Ibu Rumah Tangga</h4>
-              </div>
-              <div class="tagline__who--ch mt-3 flex items-center xl:mt-0">
-                <img
-                  class="mr-1.5 lg:mr-2"
-                  src="./assets/icon-1.png"
-                  alt=""
-                  srcset=""
-                />
-                <h4>Career Hunter</h4>
-              </div>
-            </section>
-
-            <section
-              class="tagline__community shadow-custom2 mt-12 rounded-lg bg-[#EE9591] px-3 py-3 text-center text-[#F6F6F6] md:w-[27rem] md:px-5 md:text-left lg:mt-14 lg:p-5 xl:w-[82%] 2xl:w-[55%]"
-            >
-              <h3 class="text-base font-bold md:text-xl lg:text-2xl">
-                1st Indonesian Beautypreneur Community
-              </h3>
-              <h4 class="mt-2 text-[#F6F6F6] md:text-sm lg:text-base">
-                Dengan berbagai fasilitas “advance disigital platform”.
-              </h4>
-            </section>
+  <main>
+    <section class="wrapper-tagline bg-[#FEF8F8]">
+      <section class="container-tagline flex py-16 px-4 md:px-8 lg:justify-between lg:px-14 lg:py-7">
+        <section class="tagline__article font-primary">
+          <header class="flex font-black text-[#555555] md:flex-col md:items-start">
+            <h1 class="text-4xl md:order-2 md:text-7xl lg:text-5xl xl:text-7xl 2xl:text-8xl">
+              Pasti berat <br />
+              kalo lari sendirian<span class="text-[#EE9591]">.</span>
+            </h1>
+            <img id="changed"
+              class="target relative -top-10 right-5 z-20 h-20 md:static md:mb-7 md:h-12 lg:ml-1.5 lg:w-36"
+              src="./assets/pixel-pc.png" alt="" srcset="" />
+          </header>
+          <h3 class="mt-7 text-[#888888] md:pr-52 md:text-lg lg:mt-7 lg:pr-20 lg:text-xl xl:pr-40 2xl:pr-80">
+            Setiap hal pasti butuh hal lain untuk membersamai. Begitupun
+            dengan bisnis, Beautieslfie.id hadir untuk membersamai kalian
+            untuk menjadi
+            <span class="font-bold underline">Beautypreneur</span>. Siapapun
+            kamu!!
+          </h3>
+          <section
+            class="tagline__who mt-4 flex flex-wrap justify-evenly font-bold text-[#888] md:w-[27rem] lg:mt-7 lg:w-full lg:pr-14 lg:text-lg xl:w-[38rem] xl:justify-between xl:text-xl 2xl:w-[50rem]">
+            <div class="tagline__who--mahasiswa mt-3 flex items-center xl:mt-0">
+              <img class="mr-1.5 lg:mr-2" src="./assets/icon-1.png" alt="" srcset="" />
+              <h4>Mahasiswa</h4>
+            </div>
+            <div class="tagline__who--irt mt-3 flex items-center xl:mt-0">
+              <img class="mr-1.5 lg:mr-2" src="./assets/icon-1.png" alt="" srcset="" />
+              <h4>Ibu Rumah Tangga</h4>
+            </div>
+            <div class="tagline__who--ch mt-3 flex items-center xl:mt-0">
+              <img class="mr-1.5 lg:mr-2" src="./assets/icon-1.png" alt="" srcset="" />
+              <h4>Career Hunter</h4>
+            </div>
           </section>
-          <section id="blured" class="tagline__img blur-lg">
-            <img
-              class="hidden lg:block lg:w-[116rem] xl:w-[150rem] 2xl:w-[91rem]"
-              src="./assets/jumbotron.png"
-              alt=""
-              srcset=""
-            />
+
+          <section
+            class="tagline__community shadow-custom2 mt-12 rounded-lg bg-[#EE9591] px-3 py-3 text-center text-[#F6F6F6] md:w-[27rem] md:px-5 md:text-left lg:mt-14 lg:p-5 xl:w-[82%] 2xl:w-[55%]">
+            <h3 class="text-base font-bold md:text-xl lg:text-2xl">
+              1st Indonesian Beautypreneur Community
+            </h3>
+            <h4 class="mt-2 text-[#F6F6F6] md:text-sm lg:text-base">
+              Dengan berbagai fasilitas “advance disigital platform”.
+            </h4>
           </section>
         </section>
+        <section id="blured" class="tagline__img blur-lg">
+          <img class="hidden lg:block lg:w-[116rem] xl:w-[150rem] 2xl:w-[91rem]" src="./assets/jumbotron.png" alt=""
+            srcset="" />
+        </section>
       </section>
-      <section class="wrapper-section2">
+    </section>
+    <section class="wrapper-section2">
+      <div
+        class="section2-parent flex w-auto flex-col py-10 px-4 md:px-8 lg:mt-10 lg:flex-row lg:justify-around lg:py-36">
+        <div class="parent__text font-primary lg:w-[50%]">
+          <h2 class="text-heading font-primary mb-5 text-3xl font-bold lg:text-5xl">
+            Beautypreneur.
+          </h2>
+          <h3 class="text-paragraph mb-5 font-medium lg:text-xl">
+            ˈbyo͞odē prəˈnər (noun)
+          </h3>
+          <h3 class="text-paragraph mb-2 lg:mr-60 lg:text-sm xl:text-lg">
+            Bukan sekedar bisnis yang hits dengan segudang untung. Tren
+            <span class="text-heading font-bold underline">beautypreneur</span>
+            di Indonesia sudah mulai terlihat sejak beberapa tahun terakhir,
+            industri kecantikan dalam negeri maulai berkembang pesat.
+          </h3>
+          <div class="h-[12px] w-[100px] rounded-full bg-[#EE9591] 2xl:h-[24px] 2xl:w-[200px]"></div>
+        </div>
         <div
-          class="section2-parent flex w-auto flex-col py-10 px-4 md:px-8 lg:mt-10 lg:flex-row lg:justify-around lg:py-36"
-        >
-          <div class="parent__text font-primary lg:w-[50%]">
-            <h2
-              class="text-heading font-primary mb-5 text-3xl font-bold lg:text-5xl"
-            >
-              Beautypreneur.
-            </h2>
-            <h3 class="text-paragraph mb-5 font-medium lg:text-xl">
-              ˈbyo͞odē prəˈnər (noun)
-            </h3>
-            <h3 class="text-paragraph mb-2 lg:mr-60 lg:text-sm xl:text-lg">
-              Bukan sekedar bisnis yang hits dengan segudang untung. Tren
-              <span class="text-heading font-bold underline"
-                >beautypreneur</span
-              >
-              di Indonesia sudah mulai terlihat sejak beberapa tahun terakhir,
-              industri kecantikan dalam negeri maulai berkembang pesat.
-            </h3>
-            <div
-              class="h-[12px] w-[100px] rounded-full bg-[#EE9591] 2xl:h-[24px] 2xl:w-[200px]"
-            ></div>
+          class="parent__img mt-10 flex flex-col md:flex-row md:justify-between lg:mt-0 lg:w-[50%] lg lg:border-red-600 xl:w-[44%]">
+          <div
+            class="left font-primary w-auto rounded-2xl border-8 border-[#F6F6F6] bg-[#E38A86] px-5 py-5 text-white md:w-96 lg:w-72 lg:shadow-inner">
+            <div class="heading flex justify-between">
+              <h6 class="text-[60px] font-bold text-white">50%</h6>
+              <img class="h-16 w-auto" src="./assets/mini-img01.png" alt="" srcset="" />
+            </div>
+            <p class="text-[14px]">
+              Bingun bagaimana caranya memulai bisnis healthy beauty.
+              Sedangkan demand di sektor ini begitu melimpah.
+            </p>
+            <p class="mt-3 text-[10px] opacity-60">
+              source involve.cewekbanget.id/beautypreneur
+            </p>
           </div>
           <div
-            class="parent__img mt-10 flex flex-col md:flex-row md:justify-between lg:mt-0 lg:w-[50%] lg lg:border-red-600 xl:w-[44%]"
-          >
-            <div
-              class="left font-primary w-auto rounded-2xl border-8 border-[#F6F6F6] bg-[#E38A86] px-5 py-5 text-white md:w-96 lg:w-72 lg:shadow-inner"
-            >
-              <div class="heading flex justify-between">
-                <h6 class="text-[60px] font-bold text-white">50%</h6>
-                <img
-                  class="h-16 w-auto"
-                  src="./assets/mini-img01.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <p class="text-[14px]">
-                Bingun bagaimana caranya memulai bisnis healthy beauty.
-                Sedangkan demand di sektor ini begitu melimpah.
-              </p>
-              <p class="mt-3 text-[10px] opacity-60">
-                source involve.cewekbanget.id/beautypreneur
-              </p>
+            class="right font-primary mt-8 w-auto rounded-2xl border-8 border-[#F6F6F6] bg-[#E38A86] px-5 py-5 text-white md:mt-0 md:w-96 md:shadow-inner lg:w-72">
+            <div class="heading flex justify-between">
+              <h6 class="text-[60px] font-bold text-white">23,7%</h6>
+              <img class="h-16 w-auto" src="./assets/mini-img01.png" alt="" srcset="" />
             </div>
-            <div
-              class="right font-primary mt-8 w-auto rounded-2xl border-8 border-[#F6F6F6] bg-[#E38A86] px-5 py-5 text-white md:mt-0 md:w-96 md:shadow-inner lg:w-72"
-            >
-              <div class="heading flex justify-between">
-                <h6 class="text-[60px] font-bold text-white">23,7%</h6>
-                <img
-                  class="h-16 w-auto"
-                  src="./assets/mini-img01.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <p class="text-[14px]">
-                Khawatir butuh modal usaha yang sangat besar. Padahal banyak
-                cara agar dapat berbinis di sektor ini
-              </p>
-              <p class="mt-7 text-[10px] opacity-60">
-                source involve.cewekbanget.id/beautypreneur
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="wrapper-section3 mt-16 py-10 px-4 bg-[#FEF8F8]">
-        <div class="section3-heading text-center text-[26px]">
-          <h3 class="text-heading font-primary font-bold">
-            Beauty Selling <span class="text-brand">with</span> Digital
-            Pattern<span class="text-brand">.</span>
-          </h3>
-          <p class="text-paragraph hidden">
-            Pasar yang besar ditunjang dengan wadah yang tepat, insyaAllah akan
-            bebuah keberhasilan
-          </p>
-        </div>
-        <div class="section3-contents mt-0">
-          <div class="contents__tools flex justify-between items-center">
-            <div class="tools--sosmedetc ">
-              <div class="beautiesplat rounded-md bg-white flex flex-col justify-center items-center p-2 mb-5">
-                <img
-                  class="h-[46px]"
-                  src="./assets/platform.png"
-                  alt=""
-                  srcset=""
-                />
-                <h6 class="font-primary text-paragraph text-[12px] font-medium mt-3">
-                  Beautieslife.id Platform
-                </h6>
-              </div>
-              <div class="sosmedplat rounded-md bg-white flex flex-col justify-center items-center p-2">
-                <img
-                  class="h-[46px]"
-                  src="./assets/sosmed.png"
-                  alt=""
-                  srcset=""
-                />
-                <h6 class="font-primary text-paragraph text-[12px] font-medium mt-3">
-                  Social Media Platform
-                </h6>
-              </div>
-            </div>
-            <div class="tools--manahance">
-              <div class="management  rounded-md bg-white flex flex-col justify-center items-center p-2 mb-5">
-                <img class="h-[46px]" src="./assets/managements.png" alt="" srcset="" />
-                <h6 class="font-primary text-paragraph text-[12px] font-medium mt-3">Management Tools</h6>
-              </div>
-              <div class="enchance  rounded-md bg-white flex flex-col justify-center items-center p-2">
-                <img class="h-[46px]" src="./assets/chat.png" alt="" srcset="" />
-                <h6 class="font-primary text-paragraph text-[12px] font-medium mt-3">Enhance Chat Tools</h6>
-              </div>
-            </div>
-          </div>
-          <div class="contents__tagline">
-            <div class="none"></div>
-            <h4>Bukan saatnya menunda digitalisasi.</h4>
-            <p>
-              Ayo kita hadapi bersama era peralihan ini. Beautieslife.id akan
-              bantu kamu belajar berbisnis dengan berbagai tools digital yang
-              diharapkan akan mendorong kemudahan dan kelancaran bisnis beauty
-              kamu.
+            <p class="text-[14px]">
+              Khawatir butuh modal usaha yang sangat besar. Padahal banyak
+              cara agar dapat berbinis di sektor ini
             </p>
-            <div class="tagline--list">
-              <div class="list">
-                <div class="list-1">
-                  <img src="./assets/icon-1.png" alt="" srcset="" />
-                  <p>Udah bukan jamannya gaptek</p>
-                </div>
-                <div class="list-2">
-                  <img src="./assets/icon-1.png" alt="" srcset="" />
-                  <p>Udah gak ada lagi bingung pake tools apaan</p>
-                </div>
-                <div class="list-3">
-                  <img src="./assets/icon-1.png" alt="" srcset="" />
-                  <p>Gak ada lagi istilah siapa yang bakan ngajarin aku</p>
-                </div>
-                <div class="list-4">
-                  <img src="./assets/icon-1.png" alt="" srcset="" />
-                  <p>Udah bukan musimnya jalan sendirian!!</p>
-                </div>
-              </div>
-              <img src="./assets/img-mini3.png" alt="" srcset="" />
-            </div>
+            <p class="mt-7 text-[10px] opacity-60">
+              source involve.cewekbanget.id/beautypreneur
+            </p>
           </div>
         </div>
       </div>
-    </main>
-    <script src="./dist/js/app.js"></script>
-  </body>
+    </section>
+    <div class="wrapper-section3 mt-16 py-10 px-4 sm:px-16 bg-[#FEF8F8]">
+      <div class="section3-heading text-center text-[26px]">
+        <h3 class="text-heading font-primary font-bold">
+          Beauty Selling <span class="text-brand">with</span> Digital
+          Pattern<span class="text-brand">.</span>
+        </h3>
+        <p class="text-paragraph hidden sm:block sm:text-sm sm:mt-3">
+          Pasar yang besar ditunjang dengan wadah yang tepat, insyaAllah akan
+          bebuah keberhasilan
+        </p>
+      </div>
+      <div class="section3-contents mt-0 sm:mt-60 lg:flex lg:justify-center lg:items-center">
+        <div class="contents__tools flex justify-around items-center sm:justify-evenly">
+          <div class="tools--sosmedetc">
+            <div
+              class="beautiesplat rounded-md bg-white flex flex-col justify-center items-center px-2 py-5 mb-5 sm:px-4 sm:py-10 sm:rounded-[16px]">
+              <img class="h-[46px] sm:h-[96px]" src="./assets/platform.png" alt="" srcset="" />
+              <h6 class="font-primary text-paragraph text-sm font-medium mt-3 sm:self-start sm:mt-6">
+                Beautieslife.id Platform
+              </h6>
+            </div>
+            <div
+              class="sosmedplat rounded-md bg-white flex flex-col justify-center items-center px-2 py-5 sm:mt-7 sm:px-4 sm:py-4 sm:rounded-[16px]">
+              <img class="h-[46px] sm:h-[96px]" src="./assets/sosmed.png" alt="" srcset="" />
+              <h6 class="font-primary text-paragraph text-sm font-medium mt-3 sm:self-start sm:mt-6">
+                Social Media Platform
+              </h6>
+            </div>
+          </div>
+          <div class="tools--manahance sm:-mt-56 lg:-mt-0">
+            <div
+              class="management  rounded-md bg-white flex flex-col justify-center items-center px-2 py-5 mb-5 sm:mt-7 sm:px-4 sm:py-4 sm:rounded-[16px]">
+              <img class="h-[46px] sm:h-[96px]" src="./assets/managements.png" alt="" srcset="" />
+              <h6 class="font-primary text-paragraph text-sm font-medium mt-3 sm:self-start sm:mt-6">Management
+                Tools</h6>
+            </div>
+            <div
+              class="enchance  rounded-md bg-white flex flex-col justify-center items-center px-2 py-5 sm:mt-7 sm:px-4 sm:py-4 sm:rounded-[16px]">
+              <img class="h-[46px] sm:h-[96px]" src="./assets/chat.png" alt="" srcset="" />
+              <h6 class="font-primary text-paragraph text-sm font-medium mt-3 sm:self-start sm:mt-6">Enhance Chat
+                Tools</h6>
+            </div>
+          </div>
+        </div>
+        <div class="contents__tagline mt-16 sm:mt-60 lg:mt-0">
+          <div class="none sm:block sm:h-[12px] sm:w-[60px] sm:rounded-full sm:bg-[#EE9591] sm:mb-5"></div>
+          <h4 class="text-heading font-primary font-bold text-[26px] mb-10 sm:text-[40px] sm:pr-14">Bukan saatnya
+            menunda <span class="text-brand">digitalisasi</span>.</h4>
+          <p class="font-primary text-[14px] text-[#888888] mb-10 sm:text-[16px]">
+            Ayo kita hadapi bersama era peralihan ini. <span class="font-bold">Beautieslife.id</span> akan
+            bantu kamu belajar berbisnis dengan berbagai tools digital yang
+            diharapkan akan mendorong kemudahan dan kelancaran bisnis <span class="italic">beauty</span>
+            kamu.
+          </p>
+          <div class="tagline--list text-sm font-primary font-bold text-[#888888] sm:flex sm:justify-between">
+            <div class="list">
+              <div class="list-1 mt-5 flex justify-start items-center">
+                <img src="./assets/icon-1.png" alt="" srcset="" />
+                <p class="ml-3 sm:text-[16px]">Udah bukan jamannya gaptek</p>
+              </div>
+              <div class="list-2 mt-5 flex justify-start items-center">
+                <img src="./assets/icon-1.png" alt="" srcset="" />
+                <p class="ml-3 sm:text-[16px]">Udah gak ada lagi bingung pake tools apaan</p>
+              </div>
+              <div class="list-3 mt-5 flex justify-start items-center">
+                <img src="./assets/icon-1.png" alt="" srcset="" />
+                <p class="ml-3 sm:text-[16px]">Gak ada lagi istilah siapa yang bakan ngajarin aku</p>
+              </div>
+              <div class="list-4 mt-5 flex justify-start items-center">
+                <img src="./assets/icon-1.png" alt="" srcset="" />
+                <p class="ml-3 sm:text-[16px]">Udah bukan musimnya jalan sendirian!!</p>
+              </div>
+            </div>
+            <img class="hidden sm:block sm:h-[122px] translate-y-" src="./assets/img-mini3.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./dist/js/app.js"></script>
+</body>
+
 </html>

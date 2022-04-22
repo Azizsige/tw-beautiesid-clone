@@ -6,9 +6,12 @@
   .wrapper-section2 {
     object-fit: cover;
     object-position: center;
-    background-position: 111% 147px; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: 111% 147px;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
     background-image: url("/assets/bgsec3.png");
   }
 
@@ -24,9 +27,12 @@
     object-fit: cover;
     object-position: center;
     height: 19rem;
-    background-position: 91% 75px; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: auto; /* Resize the background image to cover the entire container */
+    background-position: 91% 75px;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: auto;
+    /* Resize the background image to cover the entire container */
     background-image: url("/assets/section3-mini.png");
   }
 
