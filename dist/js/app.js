@@ -1,5 +1,6 @@
 const toggle = document.getElementById("toggle");
 let changed = document.getElementById("changed");
+let changedSec3 = document.querySelector(".contents__tools");
 let navbar = document.getElementById("mobile-menu-4");
 
 toggle.addEventListener("click", function () {
@@ -11,8 +12,10 @@ const mediaQuery = window.matchMedia("(min-width: 768px)");
 function handleTabletChange(e) {
   // Check if the media query is true
   if (e.matches) return changed.src = "./assets/pixel-pc.png";
-  if(!e.matches) return changed.src = "./assets/pixel-mobile.png"
-  
+  if (!e.matches) return changed.src = "./assets/pixel-mobile.png";
+  if (e.matches) return changedSec3.style.backgroundImage = ".url('./assets/section3-bg.png')";
+  if (!e.matches) return changedSec3.style.backgroundImage = ".url('./assets/section3-mini.png')";
+
 }
 // Register event listener
 mediaQuery.addListener(handleTabletChange);
@@ -20,9 +23,9 @@ mediaQuery.addListener(handleTabletChange);
 // Initial check
 handleTabletChange(mediaQuery);
 
-function callback(entries){
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
+function callback(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
       const removeBlur = document.getElementById('blured');
       removeBlur.classList.remove('blur-lg')
     }

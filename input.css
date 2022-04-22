@@ -19,7 +19,7 @@
     object-fit: cover;
     object-position: center;
     height: 19rem;
-    background-position: 91% 75px;
+    background-position: 100% 75px;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
@@ -36,11 +36,21 @@
       background-repeat: no-repeat;
       background: url("./../../assets/bgsec2.png") no-repeat 59% 15rem, linear-gradient(to bottom, #FFFFFF 80%, #FEF8F8 86%);
     }
+
+    .contents__tools {
+      background-position: 11rem 1rem;
+      background-image: url("./../../assets/section3-bg.png");
+    }
   }
 
   @media (min-width: 1024px) {
     .wrapper-section2 {
       background: url("./../../assets/bgsec2.png") no-repeat 99% 3rem, linear-gradient(to bottom, #FFFFFF 80%, #FEF8F8 86%);
+    }
+
+    .contents__tools {
+      background-position: 0rem 1rem;
+      background-image: url("./../../assets/section3-bg.png");
     }
   }
 }
