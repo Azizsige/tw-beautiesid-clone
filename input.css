@@ -12,7 +12,8 @@
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */
-    background-image: url("/assets/bgsec3.png");
+    background-image: url("./../../assets/bgsec2.png");
+    background-image: url("./../../assets/bgsec2.png"), linear-gradient(to bottom, #FFFFFF 81%, #FEF8F8 78%);
   }
 
   .left {
@@ -20,7 +21,7 @@
   }
 
   .right {
-    box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 60%);
+    box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 78%);
   }
 
   .contents__tools {
@@ -33,7 +34,11 @@
     /* Do not repeat the image */
     background-size: auto;
     /* Resize the background image to cover the entire container */
-    background-image: url("/assets/section3-mini.png");
+    background-image: url("./../../assets/section3-mini.png");
+  }
+
+  .wrapper-tagline {
+    background-image: url("./assets/sosmed.png");
   }
 
   @media (min-width: 1024px) {
