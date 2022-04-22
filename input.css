@@ -4,16 +4,7 @@
 
 @layer base {
   .wrapper-section2 {
-    object-fit: cover;
-    object-position: center;
-    background-position: 111% 147px;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    background-image: url("./../../assets/bgsec2.png");
-    background-image: url("./../../assets/bgsec2.png"), linear-gradient(to bottom, #FFFFFF 81%, #FEF8F8 78%);
+    background: none, linear-gradient(to bottom, #FFFFFF 80%, #FEF8F8 86%);
   }
 
   .left {
@@ -37,13 +28,19 @@
     background-image: url("./../../assets/section3-mini.png");
   }
 
-  .wrapper-tagline {
-    background-image: url("./assets/sosmed.png");
+  @media (min-width: 768px) {
+    .wrapper-section2 {
+      background-position: 111% -22px;
+      object-position: center;
+      background-position: right 147px;
+      background-repeat: no-repeat;
+      background: url("./../../assets/bgsec2.png") no-repeat 59% 15rem, linear-gradient(to bottom, #FFFFFF 80%, #FEF8F8 86%);
+    }
   }
 
   @media (min-width: 1024px) {
     .wrapper-section2 {
-      background-position: 111% -22px;
+      background: url("./../../assets/bgsec2.png") no-repeat 99% 3rem, linear-gradient(to bottom, #FFFFFF 80%, #FEF8F8 86%);
     }
   }
 }
