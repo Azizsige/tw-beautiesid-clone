@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="bg-[#FEF8F8] px-4 py-7 sm:px-4 md:px-12 lg:px-16">
+  <nav class="bg-[#FEF8F8] px-4 py-7 sm:px-4 md:px-12 lg:px-8 xl:px-16">
     <div class="mx-auto flex flex-wrap items-center justify-between lg:px-auto">
       <a href="#" class="ml-2">
         <img class="h-7 w-32 sm:h-auto sm:w-auto lg:w-52" src="./assets/logo.png" alt="" srcset="" />
@@ -53,7 +53,8 @@
 
   <main>
     <section class="wrapper-tagline bg-[#FEF8F8]">
-      <section class="container-tagline flex py-16 px-4 sm:px-7 md:px-12 lg:justify-between lg:px-16 lg:py-7 lg:mb-10">
+      <section
+        class="container-tagline flex py-16 px-4 sm:px-7 md:px-12 lg:justify-between lg:px-8 xl:px-16 lg:py-7 lg:mb-10">
         <section class="tagline__article font-primary">
           <header class="flex font-black text-[#555555] md:flex-col md:items-start">
             <h1 class="text-4xl md:order-2 md:text-7xl lg:text-5xl xl:text-[70px] 2xl:text-8xl">
@@ -106,7 +107,7 @@
     </section>
     <section class="wrapper-section2 sm:h-[46rem] lg:h-[35rem]">
       <div
-        class="section2-parent flex w-auto flex-col py-10 px-4 sm:px-7 md:px-12 lg:px-16 md:py-16 lg:mt-10 lg:flex-row lg:justify-between lg:py-36">
+        class="section2-parent flex w-auto flex-col py-10 px-4 sm:px-7 md:px-12 lg:px-8 xl:px-16 md:py-16 lg:mt-10 lg:flex-row lg:justify-between lg:py-36">
         <div class="parent__text font-primary lg:w-[50%]">
           <h2 class="text-heading font-primary mb-5 text-3xl font-bold lg:text-[40px]">
             Beautypreneur.
@@ -155,7 +156,7 @@
         </div>
       </div>
     </section>
-    <div class="wrapper-section3 py-10 md:px-12 lg:px-16 bg-[#FEF8F8]">
+    <div class="wrapper-section3 py-10 md:px-12 lg:px-8 xl:px-16 bg-[#FEF8F8]">
       <div class="section3-heading sm:mt-24 md:mt-0 text-center text-[26px] md:text-[40px] lg:text-[70px]">
         <h3 class="text-heading font-primary font-bold px-4 md:px-0">
           Beauty Selling <span class="text-brand">with</span> Digital
@@ -296,7 +297,7 @@
         </div>
       </div>
     </div>
-    <div class="wrapper-section5 px-4 py-10 md:px-16">
+    <div class="wrapper-section5 px-4 py-10 md:px-16 lg:px-8 xl:px-16">
       <div class="section5-parent">
         <div class="parent--heading mt-10 font-primary text-heading font-bold text-center">
           <h3 class="text-[26px] lg:text-[40px]">Meet our <span class="text-brand">mentor</span> and <span
@@ -308,7 +309,7 @@
             Akan banyak ilmu baru dan
             inspiratif.</p>
         </div>
-        <div class="parent--mentor h-[220vh] sm:h-[115vh] lg:h-[60vh] flex flex-wrap justify-around">
+        <div class="parent--mentor h-[220vh] sm:h-[115vh] lg:h-[113vh] flex flex-wrap justify-around">
           <div class="mentor-1">
             <img class="w-[225px]" src="./assets/mentor-nanda.png" alt="" srcset="">
             <div class="mentor-1__name ml-1 mt-3">
@@ -345,10 +346,10 @@
           </div>
         </div>
       </div>
-      <div class="section6-parent mt-20 xl:mt-52">
-        <div class="parent--heading font-primary xl:ml-[29.5rem]">
+      <div class="section6-parent mt-20 lg:mt-0 xl:-mt-12">
+        <div class="parent--heading font-primary xl:ml-[29rem]">
           <h4 class="font-bold text-brand text-[18px] mb-5">Testimonial</h4>
-          <h3 class="font-primary text-heading font-bold text-[26px] mb-7 xl:text-[40px]">Apa kata <span
+          <h3 class="font-primary text-heading font-bold text-[26px] mb-7 md:text-[40px]">Apa kata <span
               class="text-brand">mereka</span>?
           </h3>
         </div>
@@ -356,28 +357,33 @@
           <div class="testimonial__image flex justify-start items-center xl:justify-end">
             <img class="h-[110px] md:h-[180px] md:mr-5" src="./assets/testi-dini.png" alt="" srcset="">
             <div class="image--name font-primary ml-5 xl:basis-[26rem] xl:mr-8">
-              <p class="text-paragraph font-bold text-[14px] mb-1 xl:text-[18px]">Dinie Agustinie</p>
-              <p class="text-brand font-normal text-[12px]">Ibu Rumah Tangga</p>
-              <p class="font-primary text-paragraph text-[14px] mt-5 md:mt-3 xl:text-[16px]">Arcu sed etiam proin
+              <p class="text-paragraph font-bold text-[14px] mb-1 md:text-[30px] xl:text-[18px]">Dinie Agustinie</p>
+              <p class="text-brand font-normal text-[12px] md:text-[15px] xl:text-[12px]">Ibu Rumah Tangga</p>
+              <p class="font-primary text-paragraph text-[14px] mt-5 md:mt-3 md:text-[16px] hidden xl:block">Arcu sed
+                etiam proin
                 natoque at lectus
                 aliquam.
                 Faucibus
                 ipsum porta eleifend facilisis cras in. Sed etiam
                 proin natoque at lectus aliquam. Faucibus ipsum porta eleifend ...</p>
-              <button class="flex mt-3 self-start">
+              <button class="flex mt-3 self-start hidden xl:block">
                 <p class="font-primary font-medium text-paragraph md:text-[16px] mr-3">next</p>
                 <img src="./assets/icon-next.png" alt="" srcset="">
               </button>
             </div>
           </div>
-          <!-- <p class="font-primary text-paragraph text-[14px] mt-5">Arcu sed etiam proin natoque at lectus aliquam.
-            Faucibus
-            ipsum porta eleifend facilisis cras in. Sed etiam
-            proin natoque at lectus aliquam. Faucibus ipsum porta eleifend ...</p>
-          <button class="flex mt-3">
-            <p class="font-primary font-medium text-paragraph text-[14px] mr-3">next</p>
-            <img src="./assets/icon-next.png" alt="" srcset="">
-          </button> -->
+          <div class="testimonial--message block xl:hidden">
+            <p class="font-primary text-paragraph text-[14px] md:text-[18px] mt-5 ">Arcu sed etiam proin natoque at
+              lectus
+              aliquam.
+              Faucibus
+              ipsum porta eleifend facilisis cras in. Sed etiam
+              proin natoque at lectus aliquam. Faucibus ipsum porta eleifend ...</p>
+            <button class="flex mt-3 md:items-center">
+              <p class="font-primary font-medium text-paragraph text-[14px] md:text-[18px] mr-3 ">next</p>
+              <img class="" src="./assets/icon-next.png" alt="" srcset="">
+            </button>
+          </div>
         </div>
       </div>
     </div>
