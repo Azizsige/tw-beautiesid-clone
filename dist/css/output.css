@@ -1017,6 +1017,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 46px;
 }
 
+.h-\[110px\] {
+  height: 110px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1087,6 +1091,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-12 {
   height: 3rem;
+}
+
+.h-\[35rem\] {
+  height: 35rem;
 }
 
 .min-h-\[44px\] {
@@ -1351,6 +1359,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
+.rounded-\[16px\] {
+  border-radius: 16px;
+}
+
 .rounded-l {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1420,6 +1432,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFFBFB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 251 / var(--tw-bg-opacity));
 }
 
 .bg-red-400 {
