@@ -12,6 +12,11 @@
     background: url('./../../assets/section4-bg--mobile.png') no-repeat 46% 46rem / 7rem, linear-gradient(to bottom, #FEF8F8 80%, #FFFFFF 79%);
   }
 
+  .wrapper-section5 {
+    object-position: center;
+    background: none;
+  }
+
   .left {
     box-shadow: -51px 35px 35px 19px rgba(233, 230, 230, 60%);
     background-image: linear-gradient(145deg,
@@ -90,6 +95,11 @@
 
     .wrapper-section4 {
       background: url('./../../assets/section4-bg--md.png') no-repeat 0% 27rem / 7rem, linear-gradient(to bottom, #FEF8F8 80%, #FFFFFF 79%);
+    }
+
+    .wrapper-section5 {
+      object-position: center;
+      background: url('./../../assets/section5-bg1.png') no-repeat -86% 7rem, url('./../../assets/section5-bg2.png') no-repeat 92% 3.5rem;
     }
   }
 
