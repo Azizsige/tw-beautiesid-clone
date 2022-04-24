@@ -73,3 +73,15 @@ const options = {
 let observer = new IntersectionObserver(callback, options)
 
 observer.observe(document.querySelector('.target'))
+
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    slidesPerView: 'auto'
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
