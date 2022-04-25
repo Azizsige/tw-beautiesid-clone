@@ -12,7 +12,8 @@
     background: url('./../../assets/section4-bg--mobile.png') no-repeat 46% 46rem / 7rem, linear-gradient(to bottom, #FEF8F8 80%, #FFFFFF 79%);
   }
 
-  .wrapper-section5 {
+  .wrapper-section5,
+  .col-parent2 {
     object-position: center;
     background: none;
   }
@@ -140,6 +141,10 @@
     .swiper {
       margin-right: 0 !important;
       width: 45rem !important;
+    }
+
+    .col-parent2 {
+      background: url('./../../assets/Frame.png') no-repeat 100% 16rem / 25rem;
     }
   }
 }
